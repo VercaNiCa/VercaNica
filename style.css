@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+main {
+  width: 60%;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.galeria {
+  padding: 20px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.galeria .obrazki img {
+  width: 100px;
+  margin: 5px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 20px;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #666;
+}
+
+.galeria .obrazki {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria .obrazki img {
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #aaa;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.galeria .obrazki img:hover {
+  transform: scale(1.05);
+}
+
+.comment-box, #comments-section {
+  user-select: text;
+}

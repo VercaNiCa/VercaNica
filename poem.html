@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Moje Poematy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      user-select: none; /* blokuje zaznaczanie tekstu */
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    nav audio {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    .poem-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #fffbe7;
+    }
+
+    footer {
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    // Blokada kopiowania
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('copy', e => e.preventDefault());
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Moje Poematy</h1>
+    </header>
+
+    <main>
+      <nav>
+        <!-- Player z muzyką -->
+        <audio controls>
+          <source src="muzyka/mojautwór.mp3" type="audio/mpeg" />
+          Twoja przeglądarka nie obsługuje audio.
+        </audio>
+
+        <!-- Linki do poematów -->
+        <a href="#poemat1">Poemat 1</a>
+        <a href="#poemat2">Poemat 2</a>
+        <a href="#poemat3">Poemat 3</a>
+      </nav>
+
+      <div class="poem-content">
+        <h2 id="poemat1">Poemat 1 – Tytuł</h2>
+        <p>
+          Tutaj wpisz swój wiersz. Możesz dodawać kolejne <br />
+          linie tekstu, zwrotki i ozdobniki 🌙✨<br />
+          Nie da się tego zaznaczyć ani skopiować.
+        </p>
+
+        <h2 id="poemat2">Poemat 2 – Inny tytuł</h2>
+        <p>
+          Tutaj wpisz kolejny wiersz. Możesz wkleić tekst <br />
+          albo napisać nowy ręcznie ✍️
+        </p>
+
+        <h2 id="poemat3">Poemat 3 – Jeszcze jeden</h2>
+        <p>
+          A tutaj ostatni z poematów. Niech każdy ma własną duszę i klimat.
+        </p>
+      </div>
+    </main>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://verca-poem.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</html>
+
+    <footer>
+      © 2025 Moje Poematy. Wszelkie prawa zastrzeżone. Zakaz kopiowania.
+    </footer>
+  </div>
+
+</body>
+</html>
